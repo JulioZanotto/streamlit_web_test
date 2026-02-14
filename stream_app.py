@@ -11,10 +11,10 @@ st.set_page_config(layout="wide", page_title="Teste de Inferência YOLOv11")
 
 # --- Configurações Laterais ---
 st.sidebar.header("Configurações AWS")
-API_URL = "https://9fqkzvfajk.execute-api.us-east-1.amazonaws.com/default/moto-recognition"
 # Tenta pegar dos secrets do Streamlit, se não achar, fica vazio (ou lança erro)
 try:
     API_KEY = st.secrets["AWS_API_KEY"]
+    API_URL = st.secrets["AWS_URL"]
 except FileNotFoundError:
     st.error("Chave de API não configurada nos Secrets!")
     st.stop()
