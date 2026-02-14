@@ -7,7 +7,7 @@ import io
 from PIL import Image, ImageDraw
 from concurrent.futures import ThreadPoolExecutor
 
-st.set_page_config(layout="wide", page_title="Teste de Inferência YOLOv11")
+st.set_page_config(layout="wide", page_title="Teste de Inferência")
 
 # --- Configurações Laterais ---
 st.sidebar.header("Configurações AWS")
